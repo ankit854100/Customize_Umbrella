@@ -1,0 +1,126 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}  
+
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: B9EDDD;
+}
+
+.white_filter {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(27deg) brightness(107%) contrast(101%);
+}
+
+.blue_filter {
+    filter: invert(62%) sepia(10%) saturate(1523%) hue-rotate(142deg) brightness(89%) contrast(91%);
+}
+
+.pink_filter {
+    filter: invert(41%) sepia(91%) saturate(7051%) hue-rotate(306deg) brightness(88%) contrast(103%);
+}
+
+.yellow_filter {
+    filter: invert(76%) sepia(99%) saturate(2415%) hue-rotate(332deg) brightness(94%) contrast(99%);
+}
+
+.logo_container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_container > img {
+    width: 4rem;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30rem;
+}
+
+.image2 {
+    position: absolute;
+    bottom: 2rem;
+    left: 12rem;
+    height: 2rem;
+    width: 6rem;
+    /* border: 1px green solid; */
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description > div {
+    width: 45%;
+}
+
+.description > div > p:first-of-type{
+    font-size: 1.25rem;
+}
+
+.description  p {
+    font-weight: 300;
+}
+
+.colors_container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.colors_container > div {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.upload_logo_button {
+    background-color: 569DAA;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    align-items: center;
+    position: relative;
+}
+
+.upload_logo_button > img {
+    position: absolute;
+    top: 0.65rem;
+    left: 0.65rem;
+    width: 1.2rem;
+}
+
+.rotating {
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
